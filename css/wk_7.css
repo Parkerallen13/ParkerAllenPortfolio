@@ -1,0 +1,78 @@
+/* Base Styles */
+
+/* This part adds some space vertically between the sections 
+   and adds styling to the h2 that styles each section */
+   section {
+    margin-top: 40px;
+}
+
+section h2 {
+    color: rgb(147, 63, 178);
+    font-style: italic;
+}
+
+/* Flexbox section styles */
+.info_card img {
+    width: 25%;
+}
+
+.info_card {
+    border: #a1e4e6 dashed 2px;
+}
+
+/* Grid section styles */
+.unicorns img {
+    width: 15%;
+}
+
+.unicorns {
+    border: #ade6a1 dotted 2px;
+}
+
+.unicorns p {
+    font-size: 0.9em;
+}
+
+/* Responsive Design: Adjusting for iPhone Screens */
+@media only screen and (max-width: 768px) {
+    /* Smaller margins for mobile */
+    section {
+        margin-top: 20px;
+    }
+
+    /* Adjust h2 font size */
+    section h2 {
+        font-size: 1.2em;
+    }
+
+    /* Adjust image sizes for smaller screens */
+    .info_card img {
+        width: 50%; /* Larger for easier visibility */
+    }
+
+    .unicorns img {
+        width: 30%; /* Larger for easier visibility */
+    }
+
+    /* Adjust paragraph text for readability */
+    .unicorns p {
+        font-size: 1em;
+    }
+}
+
+/* Additional tweaks for very small screens */
+@media only screen and (max-width: 480px) {
+    section h2 {
+        font-size: 1em;
+    }
+
+    .info_card img,
+    .unicorns img {
+        width: 100%; /* Full width for very small screens */
+    }
+
+    .unicorns p {
+        font-size: 1.1em;
+        line-height: 1.4em;
+    }
+}

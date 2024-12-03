@@ -1,0 +1,51 @@
+/* Weekly Assignment 5 Stylesheet */
+
+body {
+  background-image: url(/img/news-background-oxv3zpudjcbubcg1.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* background-color: transparent; */
+}
+
+.team-name {
+  position: fixed;
+  top: 0;
+  border-style: solid;
+  border-width: thick;
+  margin: 50px;
+  padding: 50px;
+  background-color: rgba(212, 175, 55, 0.4);
+  background-image: url(/img/pngtree-collection-of-pop-up-or-description-boxes-vector-png-image_9193999.png);
+}
+
+.score {
+  position: fixed;
+  bottom: 0;
+  border-style: solid;
+  border-width: thick;
+  margin: 50px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 35px;
+}
+
+.row {
+  display: flex;
+  max-width: 20vw;
+  flex-shrink: 0.2;
+}
+
+.column {
+  display: flex;
+  margin: 75px;
+}
+
+.column2 {
+ margin-right: 40%;
+ margin-top: 15%;
+}

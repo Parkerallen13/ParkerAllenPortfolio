@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 00;
+        font-style: normal;
+        font-size: 20px;
+        color: #731702;
+  background-color: #A6BF80;
+      }
+      h1 {
+        background-color: rgb(236, 236, 239);
+        padding: 20px;
+        font-size: 40px;
+        border: 5px solid black;
+      }
+      p {
+        padding: 20px;
+        font-size: 25px;
+        color: #f2220f;
+        border: 3px solid black;
+      }
+      button {
+        font-size: 15px;
+        margin: 20px;
+        padding: 10px;
+        border: 2px solid #731702;
+        color: #731702;
+        background-color: #F2DE79;
+      }
+
+      .placeholder {
+        font-size: 15px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <h2>Fortune Teller</h2>
+        <div id="fortune"></div>
+        <button onclick="tellFortune(4, 'John', 'Hawaii', 'Dolphin Trainer')">
+          Get Fortune 1
+        </button>
+        <button onclick="tellFortune(10, 'Sera', 'Pitsburg', 'Musician')">
+          Get Fortune 2
+        </button>
+        <button onclick="tellFortune(2, 'Max', 'Ohio', 'Gymnastics teacher')">
+          Get Fortune 3
+        </button>
+      </div>
+
+      <div class="item">
+        <h2>Dog Age Calculator</h2>
+        <div id="dogAge"></div>
+        <input class="placeholder"
+          type="number"
+          id="dogAgeInput"
+          placeholder="Enter your dog's age"
+        />
+        <button
+          onclick="calculateDogAge(parseInt(document.getElementById('dogAgeInput').value))"
+        >
+          Calculate Dog Age
+        </button>
+
+        <div class="item">
+        <h2>Reverse Number</h2>
+        <div id="reverseNumber"></div>
+        <input class="placeholder" type="number" id="numberInput" placeholder="Enter a number" />
+        <button
+          onclick="reverseNumber(parseInt(document.getElementById('numberInput').value))"
+        >
+          Reverse Number
+        </button>
+      </div>
+
+      <div class="item">
+        <h2>Alphabetical Order</h2>
+        <div id="alphabetOrder"></div>
+        <input class="placeholder" type="text" id="wordInput" placeholder="Enter a word" />
+        <button onclick="alphabet(document.getElementById('wordInput').value)">
+          Alphabetize
+        </button>
+      </div>
+
+      <div class="item">
+        <h2>Title Case</h2>
+        <div id="titleCase"></div>
+        <input class="placeholder" type="text" id="title" placeholder="Enter a sentence" />
+        <button onclick="titleCase(document.getElementById('title').value)">
+          Convert to Title Case
+        </button>
+      </div>
+    </div>
+
+    <script src="ica11.js"></script>
+  </body>
+</html>
